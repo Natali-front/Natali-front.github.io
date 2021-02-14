@@ -1,0 +1,42 @@
+.bg-portfolio .wrapper {
+    width: 100%;
+    height: 250px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+    background-image: url("../media/home/jpeg/bg-portfolio.jpg");           
+        h2 {
+        font-family: "Roboto-Light", sans-serif;
+        background-color: black;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 100;
+        width: 380px;
+        height: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.4;
+        letter-spacing: 2.4px;
+        word-spacing: 6px;
+        margin-bottom: 14px;
+        position: absolute;
+        top: 22%;
+        left: 268px;
+        padding-left: 6px;
+    }
+        p {
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 55%;
+        left: 267px;
+        word-spacing: 2.6px;
+        letter-spacing: 3.9px;
+        } 
+}    
+.main-portfolio .services {
+    margin-top: 50px;
+    
+}    
