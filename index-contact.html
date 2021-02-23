@@ -18,7 +18,7 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./index-about.html">About</a></li>
                         <li><a href="./index-portfolio.html">Portfolio</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="./index-contact.html">Contact</a></li>
@@ -30,42 +30,67 @@
             </div>
         </header>
     </section>
-    <section class="bg-portfolio">
+    <section class="bg-contact">
         <div class="wrapper">
-            <h2>Latest projects</h2>
-            <p>We deliver quality</p>
+            <h2>Get in touch</h2>
+            <h4>Contact us today</h4>
         </div>
     </section>
-    <section class="main-portfolio">
-        <div class="wrapper">
-            <nav class="services">
-                <ul>
-                    <li><a href="#">all</a></li>
-                    <li><a href="#">logo</a></li>
-                    <li><a href="#">mobile app</a></li>
-                    <li><a href="#">wordpress</a></li>
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">ui/ix</a></li>
-                    <li><a href="#">branding</a></li>
-                </ul>
-            </nav>
-            <div class="img-block">
-                    <img class="bottles" src="./media/home/jpeg/bottles.jpg" alt="bottles">
-                    <img class="arc" src="./media/home/jpeg/arc.jpg" alt="arc">
-                    <img class="cutlery" src="./media/home/jpeg/cutlery.jpg" alt="cutlery">
-                    <img class="table" src="./media/home/jpeg/table.jpg" alt="table">
-                    <img class="watch" src="./media/home/jpeg/watch.jpg" alt="watch">
-                    <img class="chairs" src="./media/home/jpeg/chairs.jpg" alt="chairs">
-                    <img class="watch2" src="./media/home/jpeg/watch_2.jpg" alt="watch">
-                    <img class="tables" src="./media/home/jpeg/tables.jpg" alt="tables">
-                    <img class="cosmetics" src="./media/home/jpeg/corinne.jpg" alt="cosmetics">
-                    <img class="iconic" src="./media/home/jpeg/iconic.jpg" alt="iconic">  
-            </div>
-            <div class="button">
-               <button>load more</button>
-            </div>
-        </div> 
+    <section class="office-info">
+        <div class="info">
+            <h3>Office info</h3>
+            <p>People Behind the Success of our Company</p>
+            <p><span>Office Hours:</span> Mon-Friday 8am-10pm</p>
+            <p><span>Address:</span>Igbalangao, Bugasong, Antique</p>
+            <p><span>Tell:</span> 123-456-7890</p>
+            <p><span>Fax:</span> 123-456-7890</p>
+        </div>
+        <div class="data">
+            <form class="form" action="" method="post action">
+                <input class="name" type="text" name="name" placeholder="Name">
+                <input class="email" type="text" name="email" placeholder="Email">  
+                <input class="message" type="text" name="message" placeholder="Message">
+                <input class="btn-form" type="submit" value="Send message">     
+            </form>
+        </div>
     </section>
+    <section class="address">
+        <div class="map-wrapper">
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24207.64706444327!2d-73.8191!3d40.674941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2673ee3e49f33%3A0xc75c52bdc5fd21b4!2sJamaica%2C%20NY%2011420%2C%20USA!5e0!3m2!1sen!2sby!4v1613650700578!5m2!1sen!2sby"></iframe>
+            <div class="marker">
+            <p>Mulitix big wordpress theme</p>
+            <p>110-00 Rockaway Blvd</p>
+            <p>South Ozone Park, NY 11420</p></div>
+            </div>
+        </div>  
+    </section>
+    <section class="values">
+        <div class="values-wrapper">
+        <div class="info-values"><h3>Our values</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p></div>
+            <div class="block-values">
+                <div class="first-block">
+                    <div class="img-wrapper"><img src="./media/home/jpeg/our-value-1.jpg" alt="who-we-are">
+                    </div> 
+                    <h4>Who we are</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                </div>
+                <div class="second-block">
+                    <div class="img-wrapper"><img src="./media/home/jpeg/our-value-2.jpg" alt="our-vision">
+                    </div>
+                    <h4>Our vision</h4>
+                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me.</p>
+                </div>
+                <div class="third-block">
+                    <div class="img-wrapper"><img src="./media/home/jpeg/our-value-3.jpg" alt="our-mission">
+                    </div>
+                    <h4>Our mission</h4>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="footer">
         <footer class="footer">
             <div class="wrapper">
@@ -92,6 +117,7 @@
             </div>
         </footer>
     </section>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&;sensor=false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/main.js"></script>
