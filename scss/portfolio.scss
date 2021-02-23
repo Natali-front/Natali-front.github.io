@@ -5,7 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-    background-image: url("../media/home/jpeg/bg-portfolio.jpg");           
+    background-image: url("../media/home/jpeg/bg-portfolio.jpg");         
         h2 {
         font-family: "Roboto-Light", sans-serif;
         background-color: black;
@@ -36,7 +36,74 @@
         letter-spacing: 3.9px;
         } 
 }    
+.main-portfolio .wrapper {
+    padding-top: 32px;
+    padding-bottom: 108px;
+}
 .main-portfolio .services {
-    margin-top: 50px;
-    
+    margin-left: 152px; 
 }    
+.main-portfolio .img-block {
+    display: grid;
+    grid-template-columns: 256px 255px 262px;
+    grid-template-rows: 250px 253px 250px 125px;
+    row-gap: 23px;  
+    column-gap: 23px;
+    img {
+    margin-bottom: 0px;
+ }  
+    .bottles {
+    grid-column: 1;
+    grid-row: 1;
+ }  
+    .arc {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-start;
+}
+    .cutlery {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: flex-end;
+}
+    .table {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: self-start;
+}
+    .watch {
+    grid-column: 2;
+    grid-row: 1/2;
+    align-self: self-start;
+    margin-top: 200px;
+
+}
+    .chairs {
+    grid-column: 2;
+    grid-row: 2/3;
+    align-self: center;
+    padding-top: 325px;
+}
+    .watch2 {
+    grid-column: 2;
+    grid-row: 4;
+    align-self: self-end;
+    padding-bottom: 25px;
+    
+}
+    .tables {
+    grid-column: 3;
+    grid-row: 1/2;
+    justify-self: flex-start;
+}
+    .cosmetics {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: flex-end;
+}
+    .iconic {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+}

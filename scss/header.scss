@@ -1,3 +1,12 @@
+@mixin nav-ul-style {
+	font-family: "Roboto-Bold", sans-serif;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: flex;
+	list-style-type: none;
+	letter-spacing: 0.2px;
+}
 .wr-intro {
 	height: 70px;
 }
@@ -36,18 +45,12 @@
 	li:nth-of-type(4) {
 		margin-left: 33px ;
 	}
-	li:hover {
-		font-weight: 800;
+	a:hover {
+		color: #383737;
 	}
 }
 .nav ul, .services ul {
-	font-family: "Roboto-Bold", sans-serif;
-	font-size: 10px;
-	font-weight: 600;
-	text-transform: uppercase;
-	display: flex;
-	list-style-type: none;
-	letter-spacing: 0.2px;
+	@include nav-ul-style();
 }
 .nav li, .services li {
 	margin-left: 32px;
@@ -56,9 +59,10 @@
 .logo img {
 	height: 25px;
 }
-.nav a, .services a {
+.nav a, .services a, .social-media a {
 	color: rgb(119, 119, 119);
 }
+
 svg {
 	width: 10px;
 	height: 10px;

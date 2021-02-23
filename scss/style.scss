@@ -3,6 +3,8 @@
 @import 'header';
 @import 'footer';
 @import 'portfolio';
+@import 'contact';
+@import 'about';
 
 $var1: #ffffff;
 $var2: #000000;
@@ -31,14 +33,14 @@ $var2: #000000;
 		position: absolute;
 		top: 34%;
 	}
-	p {
+	p { 
+		width: 500px;
 		font-family: "Roboto-Light", sans-serif;
 		font-size: 12px;
 		text-transform: uppercase;
 		text-align: center;
 		letter-spacing: 4.9px;
 		word-spacing: 1.4px;
-		width: 500px;
 		padding-left: 7px;
 		padding-bottom: 45px;
 		position: absolute;
@@ -166,12 +168,14 @@ $var2: #000000;
 		border-radius: 50%;
 	}
 }
-.main {
+.main, .main-portfolio, .values {
 	background-color: rgb(250, 250, 250);
 	.wrapper {
 		width: 85%;
-		padding: 3px 0px 50px;
 	}
+}
+.main .wrapper {
+	padding: 3px 0px 50px;
 }
 .services ul, .social-media ul {
 	justify-content: center;
@@ -179,7 +183,6 @@ $var2: #000000;
 }
 .services {
 	width: 810px;
-	background-color: rgb(250, 250, 250);
 	border-top: solid 1px rgb(225, 225, 225);
 	border-bottom: solid 1px rgb(225, 225, 225) ;
 	padding: 5px 0px;
@@ -198,10 +201,10 @@ $var2: #000000;
 			background-color: rgb(227, 227, 227);
 			transform: skewX(-20deg);
 		}
-		&:hover {
-			font-weight: 800;	
-			}	
 	 	}
+	}
+	a:hover {
+		color: #383737;
 	}
 }	
 .img-block {
