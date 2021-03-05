@@ -5,6 +5,7 @@
 @import 'portfolio';
 @import 'contact';
 @import 'about';
+@import 'blog';
 
 $var1: #ffffff;
 $var2: #000000;
@@ -175,19 +176,18 @@ $var2: #000000;
 	}
 }
 .main .wrapper {
-	padding: 3px 0px 50px;
+	padding: 23px 0px 50px;
 }
 .services ul, .social-media ul {
 	justify-content: center;
 	align-items: center;
 }
 .services {
-	width: 810px;
+	width: 73%;
 	border-top: solid 1px rgb(225, 225, 225);
 	border-bottom: solid 1px rgb(225, 225, 225) ;
 	padding: 5px 0px;
-	margin-top: 18px;
-	margin-left: 165px;
+	margin: auto;
 	ul {
 		margin-right: 71px;
 	li {
@@ -270,3 +270,232 @@ button {
 	justify-content: center;
 	margin-top: 3px;
 }
+@media all and (max-width: 360px) {
+	.adv-type1, .adv-type2{
+		height: 350px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		h2 {
+			width: 310px;
+			height: 30px;
+			font-size: 20px;
+		}
+		p {
+			top: 45%;
+		}
+	}
+	.slider {
+	.adv-wrapper {
+		height: 350px;
+	}	
+	}
+	.slider .slick-next {
+		width: 0px;
+	}
+	.slider .slick-prev {
+		width: 0px;
+	}
+	.slider .slick-next:hover{
+		display: none;
+	}
+	.bg-portfolio .wrapper {
+        background-position: 70%;
+        h2 {
+            width: 230px;
+            height: 28px;
+            font-size: 16px;
+        }
+        p {
+            top: 50%;
+        }
+    } 
+    .main {
+        padding-bottom: 10px;
+        .wrapper {
+        width: 95%;
+        padding-top: 15px;
+        margin-right: 5px; 
+        padding-bottom: 20px;
+        margin-left: 10px;
+    .services {
+        width: 100%;
+        padding: 0px;
+    ul {
+        font-size: 7px;
+        li {
+            margin-left: 24px;
+            &:not(:first-child):before {
+                height: 15px;
+                left: -17px;
+            	}
+        	}
+		}
+	}
+	}
+	}
+	.img-block {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0px;
+		.img-block2, .img-block3 {
+			margin-left: 0px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+@media (min-width: 370px) and (max-width: 414px){
+	.adv-type1, .adv-type2{
+		height: 350px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		h2 {
+			width: 310px;
+			height: 30px;
+			font-size: 20px;
+		}
+		p {
+			top: 45%;
+		}
+	}
+	.slider {
+	.adv-wrapper {
+		height: 350px;
+	}	
+	}
+	.slider .slick-next {
+		width: 0px;
+	}
+	.slider .slick-prev {
+		width: 0px;
+	}
+	.slider .slick-next:hover{
+		display: none;
+	}
+	.bg-portfolio .wrapper {
+        background-position: 70%;
+        h2 {
+            width: 230px;
+            height: 28px;
+            font-size: 16px;
+        }
+        p {
+            top: 50%;
+        }
+    } 
+    .main {
+        padding-bottom: 10px;
+        .wrapper {
+        width: 95%;
+        padding-top: 15px;
+        margin-right: 5px; 
+        padding-bottom: 20px;
+        margin-left: 10px;
+    .services {
+        width: 100%;
+        padding: 0px;
+    ul {
+        font-size: 7px;
+        li {
+            margin-left: 24px;
+            &:not(:first-child):before {
+                height: 15px;
+                left: -17px;
+            	}
+        	}
+		}
+	}
+	}
+	}
+	.img-block {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0px;
+		.img-block2, .img-block3 {
+			margin-left: 0px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.adv-type1, .adv-type2{
+		height: 350px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		h2 {
+			width: 310px;
+			height: 30px;
+			font-size: 20px;
+		}
+		p {
+			top: 45%;
+		}
+	}
+	.slider {
+	.adv-wrapper {
+		height: 350px;
+	}	
+	}
+	.slider .slick-next {
+		width: 0px;
+	}
+	.slider .slick-prev {
+		width: 0px;
+	}
+	.slider .slick-next:hover{
+		display: none;
+	}
+	.bg-portfolio .wrapper {
+        background-position: 70%;
+        h2 {
+            width: 230px;
+            height: 28px;
+            font-size: 16px;
+        }
+        p {
+            top: 50%;
+        }
+    } 
+    .main {
+        padding-bottom: 10px;
+        .wrapper {
+        width: 95%;
+        padding-top: 15px;
+        margin-right: 5px; 
+        padding-bottom: 20px;
+        margin-left: 10px;
+    .services {
+        width: 100%;
+        padding: 0px;
+    ul {
+        font-size: 7px;
+        li {
+            margin-left: 24px;
+            &:not(:first-child):before {
+                height: 15px;
+                left: -17px;
+            	}
+        	}
+		}
+	}
+	}
+	}
+	.footer .logo {
+		left: 46%;
+		}
+	}
+
+
+
+
+
+
+
+
+
