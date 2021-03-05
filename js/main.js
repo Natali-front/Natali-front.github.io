@@ -6,14 +6,27 @@ $('.adv-type').slick({
     arrows: true,
     
 }); 
-// function initMap() {
-//         map = new google.maps.Map(document.getElementById('map'), {
-//             center: {lat: 40.668983, lng: -73.829057}
-//             zoom: 8,
-//         }),
-//         marker = new google.maps.Marker({
-//             position: {lat: 40.668983, lng: -73.829057},
-//             map: map,
-//             title: 'Mulitix big wordpress theme'
-//         });
-// }
+// $(document).ready(function() {
+
+//     $(".toggle-mnu").click(function() {
+//       $(this).toggleClass("on");
+//       $(".top-nav").toggle();
+//       return false;
+//     });
+//   });
+// $(document).click(function(event) {
+//     if (!$(event.target).closest('#menu__box, #checkOpen').length) {
+//       if ($('#menu__box').is(":visible")) {
+//         document.getElementById("menu__box").style.width = "0px";
+//       }
+//     }
+//   })
+$('#menu-hamburger').on('click', function() {
+    if (!$(this).hasClass('clicked')) { // если класса нет
+      $(this).addClass('clicked'); // добавляем класс
+      document.getElementsByClassName('menu__box')[0].style.left = '0'; // код для первого клика
+    } else { // если есть
+      $(this).removeClass('clicked'); // убираем класс
+      document.getElementsByClassName('menu__box')[0].style.left = '-100%'; // код для второго клика
+    }
+  });

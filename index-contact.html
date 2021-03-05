@@ -16,20 +16,26 @@
             <div class="wrapper">
                 <a href="#" class="logo"><img src="./media/home/svg/logo_lian.png" alt="logo"></a>
                 <nav class="nav">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index-about.html">About</a></li>
-                        <li><a href="./index-portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="./index-contact.html">Contact</a></li>
-                        <li><a href="#">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="./index.html">Home</a></li>
+                        <li><a class="menu__item"href="./index-about.html">About</a></li>
+                        <li><a class="menu__item"href="./index-portfolio.html">Portfolio</a></li>
+                        <li><a class="menu__item"href="./index-blog.html">Blog</a></li>
+                        <li><a class="menu__item"href="./index-contact.html">Contact</a></li>
+                        <li><a class="menu__item"href="#">
                             <svg class="search" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
                              </a></li>
                     </ul>
+                    </div>
                 </nav>
             </div>
         </header>
-    </section>
+    </section>    
     <section class="bg-contact">
         <div class="wrapper">
             <h2>Get in touch</h2>
@@ -72,20 +78,23 @@
                 <div class="first-block">
                     <div class="img-wrapper"><img src="./media/home/jpeg/our-value-1.jpg" alt="who-we-are">
                     </div> 
-                    <h4>Who we are</h4>
+                    <div class="info-block"><h4>Who we are</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                </div>    
                 </div>
                 <div class="second-block">
                     <div class="img-wrapper"><img src="./media/home/jpeg/our-value-2.jpg" alt="our-vision">
                     </div>
-                    <h4>Our vision</h4>
+                    <div class="info-block"><h4>Our vision</h4>
                     <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me.</p>
+                </div>  
                 </div>
                 <div class="third-block">
                     <div class="img-wrapper"><img src="./media/home/jpeg/our-value-3.jpg" alt="our-mission">
                     </div>
-                    <h4>Our mission</h4>
+                    <div class="info-block"><h4>Our mission</h4>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+                </div>      
                 </div>
             </div>
         </div>
