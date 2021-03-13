@@ -49,11 +49,10 @@ body {
 }
 a {
 	text-decoration: none;
-}
-a:hover {
+&:hover {
     color: #383737;
 }
-
+}
 .wrapper {
 	margin-left: auto;
 	margin-right: auto;
