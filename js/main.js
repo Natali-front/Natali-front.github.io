@@ -1,3 +1,4 @@
+let btnsContainer = document.querySelector('.btns-container');
 let backButton = document.querySelector('.slick-next');
 let nextButton = document.querySelector('.slick-prev');
 
@@ -6,27 +7,43 @@ $('.adv-type').slick({
     arrows: true,
     
 }); 
-// $(document).ready(function() {
 
-//     $(".toggle-mnu").click(function() {
-//       $(this).toggleClass("on");
-//       $(".top-nav").toggle();
-//       return false;
-//     });
-//   });
-// $(document).click(function(event) {
-//     if (!$(event.target).closest('#menu__box, #checkOpen').length) {
-//       if ($('#menu__box').is(":visible")) {
-//         document.getElementById("menu__box").style.width = "0px";
-//       }
-//     }
-//   })
-$('#menu-hamburger').on('click', function() {
-    if (!$(this).hasClass('clicked')) { // если класса нет
-      $(this).addClass('clicked'); // добавляем класс
-      document.getElementsByClassName('menu__box')[0].style.left = '0'; // код для первого клика
-    } else { // если есть
-      $(this).removeClass('clicked'); // убираем класс
-      document.getElementsByClassName('menu__box')[0].style.left = '-100%'; // код для второго клика
+
+function clearClass(arrElements, classNameEl) {
+    for(let i = 0; i < arrElements.length; i++) {
+        const btn = arrElements[i];
+        if(btn.classList.contains(classNameEl)) {
+            btn.classList.remove(classNameEl)
+        }
     }
-  });
+}
+
+btnsContainer.addEventListener('click', function(e) {
+    let currentEl = e.target;
+    if(!currentEl.classList.contains('btn')) return;
+
+    let btn = currentEl;
+    if(btn.classList.contains('active')) return;
+
+    let btns = this.querySelectorAll('.btn');
+    clearClass(btns, 'active');
+    // Array.from(btns)
+    // btns.filter(btn => btn.classList.contains('active'))
+    // .map(btn => btn.classList.remove('active'));
+    btn.classList.add('active');
+
+    let items = document.querySelectorAll('.item');
+    let btnId = btn.id;
+    clearClass(items, 'hide');
+
+    if(btnId === 'item-all') return;
+
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        
+        let dataValue = item.dataset.item;
+        if(dataValue !== btnId) {
+            item.classList.add('hide');
+        }
+    }
+});

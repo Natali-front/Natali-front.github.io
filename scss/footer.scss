@@ -2,32 +2,39 @@
 $var1: #000000;
 
 .footer .wrapper {
+	width: 100%;
 	height: 214px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-left: 505px;
+	padding-right: 505px;
 }
 .footer .logo {
 	margin-top: 48px;
 	margin-bottom: 28px;
 }
 .social-media {
-	width: 100%;
 	border-top: 1px solid  rgb(243, 243, 243);
 	border-bottom: 1px solid rgb(243, 243, 243);
-	ul {
-		display: flex;
-		list-style-type: none;
-		padding: 0;
-		margin-right: 40px;
-	}
+	display: flex;
+	list-style-type: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	li {
-		margin-left: 39px;
+		margin-left: 14px;
+		margin-right: 14px;
 	}
+	a {
+		padding: 5px;
+	}
+}
 	a:hover {
 		color: #383737;
 	}
-}
 .footer p {
 	font-family: "Roboto-regular", sans-serif;
 	font-size: 9px;

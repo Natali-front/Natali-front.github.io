@@ -52,7 +52,7 @@
     border-top: 2px solid #000;
 }
 @mixin img-member {
-    width: 33%;
+    // width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@
     align-items: center;
 }
 @mixin img-member-wrapper {
-    width: 100%;
+    width: 250px;
     height: 310px;   
 }
 .bg-about .wrapper {
@@ -306,9 +306,9 @@ span {
 }
 }
 }
-#menu__toggle {
-    display: none;
-}
+// #menu__toggle {
+//     display: none;
+// }
 @media all and (max-width: 320px) {
  #menu__toggle {
     opacity: 0;
@@ -342,11 +342,13 @@ span {
   top: 8px;
 }
 .menu__box {
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     visibility: hidden;
+    overflow: hidden;
     top: 0;
     left: -100%;
     height: 40%;
@@ -357,7 +359,6 @@ span {
     background-color: rgb(238, 238, 240);
     opacity: 90%;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    z-index: 1;
   }
   .menu__item {
     height: 40px;
@@ -405,7 +406,7 @@ span {
 .nav li:first-child:before {
     display: none;
 }
-.logo {
+.header .logo {
     position: absolute;
     right: 5%;
     overflow: hidden;
@@ -414,6 +415,7 @@ span {
         width: 100%;
         height: 160px;
         margin-left: 0px;
+        z-index: -1;
     h2 {
         width: 80%;
         left: 15px;
@@ -495,21 +497,6 @@ margin-left: 64%;
 .member-1 p, .member-2 p, .member-3 p {
     margin-top: 5px;
 }
-.social-media li {
-    margin-left: 28px;
-}
-.footer .wrapper {
-    height: 150px;
-}
-.footer .logo {
-    left: 38%;
-    margin-top: 50px;
-}
-.footer p {
-    margin-top: 48px;
-    text-align: center;
-    margin-right: 0px;
-    }
 }
 @media (min-width: 330px) and (max-width: 360px) {
     #menu__toggle {
@@ -549,9 +536,11 @@ margin-left: 64%;
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
        height: 40%;
+       width: 60%;
        margin: 0;
        padding: 80px 0;
        list-style: none;
@@ -559,7 +548,6 @@ margin-left: 64%;
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -607,7 +595,7 @@ margin-left: 64%;
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header .logo {
        position: absolute;
        right: 5%;
        overflow: hidden;
@@ -616,6 +604,7 @@ margin-left: 64%;
            width: 100%;
            height: 160px;
            margin-left: 0px;
+           z-index: -1;
        h2 {
            width: 80%;
            left: 15px;
@@ -703,21 +692,6 @@ margin-left: 64%;
    .member-1 p, .member-2 p, .member-3 p {
        margin-top: 5px;
    }
-   .social-media li {
-       margin-left: 28px;
-   }
-   .footer .wrapper {
-       height: 120px;
-   }
-   .footer .logo {
-       left: 38%;
-       margin-top: 50px;
-   }
-   .footer p {
-       margin-top: 48px;
-       text-align: center;
-       margin-right: 0px;
-       }
    }
    @media (min-width: 360px) and (max-width: 375px) {
     #menu__toggle {
@@ -757,8 +731,10 @@ margin-left: 64%;
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
+       width: 60%;
        height: 40%;
        margin: 0;
        padding: 80px 0;
@@ -767,7 +743,6 @@ margin-left: 64%;
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -815,7 +790,7 @@ margin-left: 64%;
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header.logo {
        position: absolute;
        right: 5%;
        overflow: hidden;
@@ -824,6 +799,7 @@ margin-left: 64%;
            width: 100%;
            height: 160px;
            margin-left: 0px;
+           z-index: -1;
        h2 {
            width: 80%;
            left: 15px;
@@ -911,21 +887,6 @@ margin-left: 64%;
    .member-1 p, .member-2 p, .member-3 p {
        margin-top: 5px;
    }
-   .social-media li {
-       margin-left: 28px;
-   }
-   .footer .wrapper {
-       height: 120px;
-   }
-   .footer .logo {
-       left: 35%;
-       margin-top: 50px;
-   }
-   .footer p {
-       margin-top: 48px;
-       text-align: center;
-       margin-right: 0px;
-       }
    }
    @media (min-width: 360px) and (max-width: 414px) {
     #menu__toggle {
@@ -965,8 +926,10 @@ margin-left: 64%;
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
+       width: 60%;
        height: 40%;
        margin: 0;
        padding: 80px 0;
@@ -975,7 +938,6 @@ margin-left: 64%;
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -1023,7 +985,7 @@ margin-left: 64%;
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header .logo {
        position: absolute;
        right: 5%;
        overflow: hidden;
@@ -1032,6 +994,7 @@ margin-left: 64%;
            width: 100%;
            height: 160px;
            margin-left: 0px;
+           z-index: -1;
        h2 {
            width: 80%;
            left: 15px;
@@ -1119,21 +1082,6 @@ margin-left: 64%;
    .member-1 p, .member-2 p, .member-3 p {
        margin-top: 5px;
    }
-   .social-media li {
-       margin-left: 28px;
-   }
-   .footer .wrapper {
-       height: 120px;
-   }
-   .footer .logo {
-       left: 35%;
-       margin-top: 50px;
-   }
-   .footer p {
-       margin-top: 48px;
-       text-align: center;
-       margin-right: 0px;
-       }
    }
    @media (min-width: 768px) and (max-width: 1024px) {
     #menu__toggle {
@@ -1173,8 +1121,10 @@ margin-left: 64%;
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
+       width: 60%;
        height: 40%;
        margin: 0;
        padding: 80px 0;
@@ -1183,7 +1133,6 @@ margin-left: 64%;
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -1231,7 +1180,7 @@ margin-left: 64%;
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header .logo {
        position: absolute;
        right: 5%;
        overflow: hidden;
@@ -1241,6 +1190,7 @@ margin-left: 64%;
            height: 160px;
            margin-left: 0px;
            background-position: center;
+           z-index: -1;
        h2 {
            width: 50%;
            left: 15px;
@@ -1334,20 +1284,5 @@ margin-left: 64%;
    .member-1 p, .member-2 p, .member-3 p {
        margin-top: 5px;
    }
-   .social-media li {
-       margin-left: 28px;
-   }
-   .footer .wrapper {
-       height: 120px;
-   }
-   .footer .logo {
-       left: 43%;
-       margin-top: 50px;
-   }
-   .footer p {
-       margin-top: 48px;
-       text-align: center;
-       margin-right: 0px;
-       }
    }
    

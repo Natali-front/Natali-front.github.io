@@ -73,8 +73,7 @@
     opacity: 70%;
     transform: translateY(-100%);
     transition: 3s;
-    transition-duration: 1s;
-    padding-top: 50px;     
+    padding-top: 0px;     
     }
 .bg-blog .wrapper {
     width: 100%;
@@ -145,7 +144,6 @@
             &:hover {
                 @include blog-hover();
                 height: 180px;
-                padding-top: 0px;
                 transform: translateY(-90%);
             }
         }
@@ -269,9 +267,9 @@
             padding: 5px 20px 20px 30px;
             &:hover {
             @include blog-hover();
-            height: 170px;
+            height: 200px;
             transform: translateY(-90%);
-            padding-top: 10px;
+            padding-top: 5px;
         }
         }
         .post-img5 img{
@@ -573,8 +571,10 @@
     justify-content: space-between;
     position: fixed;
     visibility: hidden;
+    overflow: hidden;
     top: 0;
     left: -100%;
+    width: 60%;
     height: 40%;
     margin: 0;
     padding: 80px 0;
@@ -583,7 +583,6 @@
     background-color: rgb(238, 238, 240);
     opacity: 90%;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    z-index: 1;
   }
   .menu__item {
     height: 40px;
@@ -631,7 +630,7 @@
 .nav li:first-child:before {
     display: none;
 }
-.logo {
+.header .logo {
     position: absolute;
     right: 5%;
     overflow: hidden;
@@ -642,6 +641,7 @@
     margin-left: 0px;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: -1;
 h2 {
     width: 60%;
     top: 10%;
@@ -720,8 +720,10 @@ h4 {
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
+       width: 60%;
        height: 40%;
        margin: 0;
        padding: 80px 0;
@@ -730,7 +732,6 @@ h4 {
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -778,7 +779,7 @@ h4 {
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header.logo {
        position: absolute;
        right: 5%;
        overflow: hidden;
@@ -789,6 +790,7 @@ h4 {
        margin-left: 0px;
        background-size: contain;
        background-repeat: no-repeat;
+       z-index: -1;
    h2 {
        width: 60%;
        top: 15%;
@@ -829,9 +831,6 @@ h4 {
    }
    }
    }
-   .footer .logo {
-       left: 39%;
-   }
    @media (min-width: 768px) and (max-width: 1024px) {
     #menu__toggle {
        opacity: 0;
@@ -870,9 +869,11 @@ h4 {
        justify-content: space-between;
        position: fixed;
        visibility: hidden;
+       overflow: hidden;
        top: 0;
        left: -100%;
-       height: 40%;
+       width: 40%;
+       height: 60%;
        margin: 0;
        padding: 80px 0;
        list-style: none;
@@ -880,7 +881,6 @@ h4 {
        background-color: rgb(238, 238, 240);
        opacity: 90%;
        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-       z-index: 1;
      }
      .menu__item {
        height: 40px;
@@ -928,7 +928,7 @@ h4 {
    .nav li:first-child:before {
        display: none;
    }
-   .logo {
+   .header .logo {
        position: absolute;
        right: 15%;
        overflow: hidden;
@@ -936,6 +936,7 @@ h4 {
    .bg-blog .wrapper  {
        width: 100%;
        background-position: 70% 5%;
+       z-index: -1;
      h2 {
        top: 25%;
        left: 5%;
@@ -955,8 +956,5 @@ h4 {
     column-gap: 10px;
     padding-right: 15px;
     }
-   }
-   .footer .logo {
-       left: 40%;
    }
    }

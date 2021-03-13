@@ -7,25 +7,39 @@
 	list-style-type: none;
 	letter-spacing: 0.2px;
 }
-.wr-intro {
-	height: 70px;
-}
 .header {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	max-height: 70px;
 	.wrapper {
-		height: 17px;
+		max-width: 865px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 22px 20px 18px 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	.hamburger-menu {
+		display: flex;
 	}
-	.logo {
-		margin-left: 253px;
+	button {
+		background-color: transparent;
+		border: none;
+		width: 40px;
+		margin-top: 5px;
+		margin-left: 20px;
+		&:hover {
+			border: none;
+			background-color: transparent;
+		}
 	}
 }
 .nav {
-	width: 420px;
-	margin-right: 295px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 295px;
+	ul {
+		padding-left: 0px;
+	}
 	li:first-child {
 		position: relative;
 		&::before {
@@ -49,18 +63,24 @@
 		color: #383737;
 	}
 }
-.nav ul, .services ul {
+.menu__item:active {
+	color: red;
+}
+.nav ul, .btns-container {
 	@include nav-ul-style();
 }
-.nav li, .services li {
+.nav li {
 	margin-left: 32px;
 	color: rgb(119, 119, 119);
 }
 .logo img {
 	height: 25px;
 }
-.nav a, .services a, .social-media a {
+.nav a, .btns-container button, .social-media a {
 	color: rgb(119, 119, 119);
+}
+.nav a:active, .btns-container button:active, .social-media a:active {
+	color: #000;
 }
 
 svg {
