@@ -2,16 +2,13 @@
 $var1: #000000;
 
 .footer .wrapper {
-	width: 100%;
-	height: 214px;
+	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-left: 505px;
-	padding-right: 505px;
+	padding-top: 48px;
 }
 .footer .logo {
-	margin-top: 48px;
 	margin-bottom: 28px;
 }
 .social-media {
