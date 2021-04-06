@@ -142,6 +142,12 @@ svg {
 	background: white;
 	cursor: pointer;
   }
+  .ham:hover, .ham:active {
+	outline: none;
+	background-color: transparent;
+	border: 0;
+	color: #000;
+  }
   
   .close-icon {
 	display: none;
