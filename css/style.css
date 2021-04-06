@@ -408,6 +408,13 @@ svg:hover {
   cursor: pointer;
 }
 
+.ham:hover, .ham:active {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  color: #000;
+}
+
 .close-icon {
   display: none;
 }
@@ -640,7 +647,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -809,7 +816,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -977,7 +984,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1138,7 +1145,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1592,7 +1599,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1744,7 +1751,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1901,7 +1908,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2065,7 +2072,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2229,7 +2236,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2838,7 +2845,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2993,7 +3000,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -3148,7 +3155,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -3304,7 +3311,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -3466,7 +3473,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -3628,7 +3635,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -4233,7 +4240,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -4388,7 +4395,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -4543,7 +4550,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -4699,7 +4706,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -4861,7 +4868,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -5023,7 +5030,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -6059,7 +6066,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -6188,7 +6195,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -6324,7 +6331,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -6461,7 +6468,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -6889,7 +6896,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -7073,7 +7080,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -7259,7 +7266,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -7411,7 +7418,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: -15px;
+    top: -25px;
     left: 0;
     right: 0;
     bottom: 0;
