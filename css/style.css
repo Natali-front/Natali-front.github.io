@@ -561,7 +561,7 @@ a:hover {
   color: #000;
 }
 .main-portfolio .wrapper .img-grid {
-  width: 85%;
+  max-width: 850px;
   display: grid;
   grid-template-columns: 256px 255px 262px;
   grid-template-rows: 250px 253px 250px 125px;
@@ -1124,7 +1124,7 @@ a:hover {
     margin-top: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 879px) {
   .ham {
     display: block;
     position: fixed;
@@ -1229,14 +1229,152 @@ a:hover {
   }
 
   .main-portfolio .wrapper {
-    width: 100%;
     padding: 15px 2px 20px 2px;
     margin-right: 0px;
     margin-left: 0px;
   }
   .main-portfolio .wrapper .btns-container {
     width: 100%;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: auto;
+    padding-left: auto;
+    font-size: 10px;
+  }
+  .main-portfolio .wrapper .btns-container li {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .main-portfolio .wrapper .btns-container li:not(:first-child):before {
+    height: 15px;
+    left: -17px;
+  }
+  .main-portfolio .wrapper .btns-container li button {
+    font-size: 7px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .main-portfolio .wrapper .img-grid {
+    width: 100%;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+}
+@media (min-width: 880px) and (max-width: 1024px) {
+  .ham {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 4%;
+    left: 0;
+    background: white;
+    cursor: pointer;
+    top: 2%;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .menu__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: -25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    background: #e9e7e7;
+    opacity: 90%;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .hamburger-menu li {
+    margin-top: 45px;
+  }
+
+  .menu__item {
+    display: inline;
+    font-size: 24px;
+    color: #666363;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+
+  .menu__box a:hover {
+    color: #000;
+  }
+
+  .header button {
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+  .header button svg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 10%;
+  }
+
+  .nav {
+    position: absolute;
+    right: 300px;
+    overflow: hidden;
+  }
+
+  .nav li:first-child:before {
+    display: none;
+  }
+
+  .header .logo {
+    margin-left: 0px;
+    position: absolute;
+    right: 5%;
+    overflow: hidden;
+  }
+
+  .bg-portfolio .wrapper {
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .bg-portfolio .wrapper .block-text .block-h2 h2 {
+    max-width: 300px;
+    max-height: 120px;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  .bg-portfolio .wrapper h4 {
+    top: 57%;
+    left: 5%;
+    font-size: 12px;
+  }
+
+  .main-portfolio .wrapper {
+    padding: 15px 2px 20px 2px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-portfolio .wrapper .btns-container {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: auto;
+    padding-left: auto;
     font-size: 10px;
   }
   .main-portfolio .wrapper .btns-container li {
